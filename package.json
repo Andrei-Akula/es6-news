@@ -4,7 +4,10 @@
   "description": "ES6 test application",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./res/webpack/webpack.config.js",
+    "build:dev": "webpack --config ./res/webpack/webpack.config.js --colors -d",
+    "build": "webpack --config ./res/webpack/webpack.config.js --colors"
   },
   "repository": {
     "type": "git",
