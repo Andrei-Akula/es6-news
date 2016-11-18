@@ -1,0 +1,30 @@
+{
+  "name": "es6-news",
+  "version": "1.0.0",
+  "description": "ES6 test application",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrei-Akula/es6-news.git"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "Andrei Akula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrei-Akula/es6-news/issues"
+  },
+  "homepage": "https://github.com/Andrei-Akula/es6-news#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.0",
+    "install": "^0.8.2",
+    "npm": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

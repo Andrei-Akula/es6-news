@@ -1,0 +1,31 @@
+# Exclude all files from target directory
+target/
+
+# Exclude files which are commonly changed for local dev
+resources/nextgen-express-server/edmunds-com-assets.properties
+
+# Exclude all idea related project files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Exclude all Eclipse related project files
+.settings/
+.project
+.classpath
+
+# Exclude other generated items
+test-output/
+.DS_Store
+.checkstyle
+.pmd
+.pmdruleset.xml
+
+reports/
+node_modules/
+temp/
+stable/
+dist/
+*.log*
