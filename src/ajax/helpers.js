@@ -15,3 +15,7 @@ function getJSON(url) {
         xhr.send();
     });
 }
+
+module.exports = {
+    getJSON
+};
