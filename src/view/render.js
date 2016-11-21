@@ -1,4 +1,3 @@
-require('./view.css');
 let articleCard = require('./articleCard');
 
 function displayNews(elemId, news) {
