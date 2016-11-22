@@ -16,6 +16,4 @@ function getJSON(url) {
     });
 }
 
-module.exports = {
-    getJSON
-};
+export { getJSON };

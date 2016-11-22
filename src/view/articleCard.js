@@ -1,5 +1,4 @@
-module.exports = {
-    render(article) {
+export default function render(article) {
         return `<div class="card">
           <img class="card-img-top w-100" src="${article.urlToImage}" alt="${article.title}">
           <div class="card-block">
@@ -10,4 +9,3 @@ module.exports = {
           </div>
         </div>`;
     }
-};

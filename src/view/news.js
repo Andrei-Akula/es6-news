@@ -1,22 +1,22 @@
-let articleCard = require('./articleCard');
+import articleRender from './articleCard.js';
 
-function displayNews(elemId, news) {
+function renderNews(elemId, news) {
     let elem = document.getElementById(elemId);
     if (elem && news.status == 'ok') {
         elem.innerHTML = news.articles
-            .map(a => '<li class="col-xs-12 col-md-8">' + articleCard.render(a) + '</li>')
+            .map(a => '<li class="col-xs-12 col-lg-10 col-xl-8">' + articleRender(a) + '</li>')
             .reduce((txt, li) => txt + li, '<ul class="articles row">') + '</ul>';
     }
 }
 
-function displyError(elemId, reason) {
+function renderError(elemId, reason) {
     let elem = document.getElementById(elemId);
     if (elem) {
         elem.innerHTML = reason;
     }
 }
 
-module.exports = {
-    displayNews,
-    displyError
+export {
+    renderNews,
+    renderError
 };

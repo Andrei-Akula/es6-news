@@ -1,10 +1,11 @@
-let ajax = require('./ajax/helpers'),
-    render = require('./view/render'),
-    newsSrc = 'bbc-news',
+import { getJSON } from './ajax/helpers.js';
+import { renderNews, renderError } from './view/news.js';
+
+let newsSrc = 'bbc-news',
     newsApiKey = '7075477dd0074880bc9b96eafd22cd03',
     containerId = 'main';
 
 
-ajax.getJSON(`https://newsapi.org/v1/articles?source=${newsSrc}&apiKey=${newsApiKey}`)
-    .then(news => { render.displayNews(containerId, news) })
-    .catch(reason => { render.displyError(containerId, reason) });
+getJSON(`https://newsapi.org/v1/articles?source=${newsSrc}&apiKey=${newsApiKey}`)
+    .then(news => { renderNews(containerId, news) })
+    .catch(reason => { renderError(containerId, reason) });
